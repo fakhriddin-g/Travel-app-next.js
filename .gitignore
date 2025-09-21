@@ -1,0 +1,69 @@
+# =========================
+# Общие правила
+# =========================
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Web (Next.js / React)
+# =========================
+web/.next/
+web/out/
+web/node_modules/
+web/.env
+web/.env.local
+
+# =========================
+# Mobile (React Native / Flutter)
+# =========================
+
+# React Native
+mobile/node_modules/
+mobile/android/.gradle/
+mobile/android/app/build/
+mobile/ios/Pods/
+mobile/ios/build/
+
+# Flutter
+mobile/.dart_tool/
+mobile/.packages
+mobile/build/
+mobile/ios/Flutter/Flutter.framework
+mobile/ios/Flutter/Flutter.podspec
+mobile/pubspec.lock
+
+# =========================
+# Backend (Python / Node.js)
+# =========================
+
+# Python
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/.venv/
+backend/venv/
+backend/env/
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/db.sqlite3
+
+# Node.js (если backend на JS/TS)
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/.env
+backend/.env.local
+
+# =========================
+# IDE / Editors
+# =========================
+.vscode/
+.idea/
+*.iml
