@@ -1,3 +1,4 @@
+import Tabs from "./Tabs";
 import TopFilterTabs from "./ui/tabs";
 
 export default function TopFilter() {
@@ -9,8 +10,8 @@ export default function TopFilter() {
       </div>
 
       {/* 2ой фильтр */}
-      <div className="sm:flex justify-between bg-gray-200 rounded-2xl">
-        <button className="px-1 sm:px-10lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
+      {/* <div className="md:p-1 sm:flex justify-between items-center bg-gray-200 rounded-2xl">
+        <button className="px-1 sm:px-10 lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
           Все туры
         </button>
         <button className="px-1 sm:px-17 lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
@@ -19,10 +20,27 @@ export default function TopFilter() {
         <button className="px-1 sm:px-17 lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
           Международные
         </button>
+      </div> */}
+
+      <div className="space-y-4">
+        {/* 2ой фильтр */}
+        <Tabs items={["Все туры", "Локальные", "Международные"]} />
+
+        {/* 3ий фильтр */}
+        <Tabs
+          items={[
+            "Все туры",
+            "Горные",
+            "Культурные",
+            "Приключения",
+            "Исторические",
+            "Природные",
+          ]}
+        />
       </div>
 
       {/* 3ий фильтр */}
-      <div className="sm:flex justify-between bg-gray-200 rounded-2xl">
+      {/* <div className="sm:flex justify-between bg-gray-200 rounded-2xl">
         <button className="sm:px-1 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
           Все туры
         </button>
@@ -41,7 +59,7 @@ export default function TopFilter() {
         <button className="sm:px-3 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
           Природные
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -24,7 +24,7 @@ export default function TopFilterTabs() {
   const [selected, setSelected] = useState(tabs[0]);
 
   return (
-    <div className="flex w-full m-0 flex-col">
+    <div className="flex w-full flex-col">
       {/* Заголовок и описание */}
       <div className="flex flex-col gap-4 mb-6">
         <h1 className="font-bold text-2xl md:text-5xl">{selected.title}</h1>
@@ -35,7 +35,7 @@ export default function TopFilterTabs() {
       <Tabs
         aria-label="Dynamic tabs"
         items={tabs}
-        placement="bottom"
+        // placement="bottom"
         onSelectionChange={(key) =>
           setSelected(tabs.find((t) => t.id === key)!)
         }
