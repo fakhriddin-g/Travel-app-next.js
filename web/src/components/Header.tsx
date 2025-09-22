@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 sm:px-4 md:px-10 xl:px-15 py-4">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-10 xl:px-15 py-4">
         {/* Логотип */}
         <div className="flex items-center gap-2 font-bold">
           <span className="bg-black text-white px-2 py-1 rounded">TJ</span>
