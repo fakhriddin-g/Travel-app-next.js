@@ -30,8 +30,7 @@ yarn install
 # Запуск
 npm run start
 
-
-### 1. Web
+### 2. Web
 cd web
 # Установка зависимостей
 npm install
@@ -44,7 +43,7 @@ npm run dev
 После запуска сайт доступен на:
 👉 http://localhost:3000
 
-3. Backend
+### 3. Backend
 Если Python (FastAPI / Django):
 cd backend
 python -m venv .venv
