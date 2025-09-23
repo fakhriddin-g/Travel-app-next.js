@@ -1,4 +1,3 @@
-import Tabs from "./Tabs";
 import TopFilterTabs from "./ui/tabs";
 
 export default function TopFilter() {
@@ -6,60 +5,46 @@ export default function TopFilter() {
     <div className="container mx-auto flex flex-col gap-5 text-center px-4 md:px-10 xl:px-15 py-4 h-100">
       {/* 1ый фильтр */}
       <div className="flex mx-auto">
-        <TopFilterTabs />
-      </div>
-
-      {/* 2ой фильтр */}
-      {/* <div className="md:p-1 sm:flex justify-between items-center bg-gray-200 rounded-2xl">
-        <button className="px-1 sm:px-10 lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Все туры
-        </button>
-        <button className="px-1 sm:px-17 lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Локальные
-        </button>
-        <button className="px-1 sm:px-17 lg:px-27 xl:px-36 2xl:px-46 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Международные
-        </button>
-      </div> */}
-
-      <div className="space-y-4">
-        {/* 2ой фильтр */}
-        <Tabs items={["Все туры", "Локальные", "Международные"]} />
-
-        {/* 3ий фильтр */}
-        <Tabs
+        <TopFilterTabs
           items={[
-            "Все туры",
-            "Горные",
-            "Культурные",
-            "Приключения",
-            "Исторические",
-            "Природные",
+            {
+              id: "1",
+              label: "Готовые туры",
+              title: "Популярные туры",
+              content:
+                "Выберите идеальное путешествие из нашей коллекции тщательно отобранных туров по Таджикистану",
+            },
+            {
+              id: "2",
+              label: "Персональные гиды",
+              title: "Лучшие гиды",
+              content:
+                "Найдите персонального гида для вашего незабываемого путешествия по Таджикистану",
+            },
           ]}
         />
       </div>
 
-      {/* 3ий фильтр */}
-      {/* <div className="sm:flex justify-between bg-gray-200 rounded-2xl">
-        <button className="sm:px-1 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Все туры
-        </button>
-        <button className="sm:px-3 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Горные
-        </button>
-        <button className="sm:px-3 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Культурные
-        </button>
-        <button className="sm:px-3 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Приключения
-        </button>
-        <button className="sm:px-3 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Исторические
-        </button>
-        <button className="sm:px-3 lg:px-8 xl:px-13 2xl:px-18 py-2 hover:bg-gray-400 rounded-2xl cursor-pointer">
-          Природные
-        </button>
-      </div> */}
+      <div className="">
+        <TopFilterTabs
+          items={[
+            { id: "1", label: "Все туры" },
+            { id: "2", label: "Горячие туры" },
+            { id: "3", label: "Популярные" },
+          ]}
+        />
+
+        <TopFilterTabs
+          items={[
+            { id: "1", label: "Все туры" },
+            { id: "2", label: "Горные" },
+            { id: "3", label: "Культурные" },
+            { id: "4", label: "Приключения" },
+            { id: "5", label: "Исторические" },
+            { id: "6", label: "Природные" },
+          ]}
+        />
+      </div>
     </div>
   );
 }
