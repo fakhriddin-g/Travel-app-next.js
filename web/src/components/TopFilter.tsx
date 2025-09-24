@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import TopFilterTabs from "./ui/tabs";
+import ToursList from "./ToursList";
+import GuidesList from "./GuidesList";
 
 export default function TopFilter() {
   const [mainActive, setMainActive] = useState("1");
@@ -32,41 +34,47 @@ export default function TopFilter() {
       </div>
 
       {mainActive === "1" && (
-        <div className="flex flex-col gap-2">
-          <TopFilterTabs
-            items={[
-              { id: "1", label: "Все туры" },
-              { id: "2", label: "По Таджикистану" },
-              { id: "3", label: "По Миру" },
-            ]}
-          />
+        <>
+          <div className="flex flex-col gap-2">
+            <TopFilterTabs
+              items={[
+                { id: "1", label: "Все туры" },
+                { id: "2", label: "По Таджикистану" },
+                { id: "3", label: "По Миру" },
+              ]}
+            />
 
-          <TopFilterTabs
-            items={[
-              { id: "1", label: "Все туры" },
-              { id: "2", label: "Горные" },
-              { id: "3", label: "Культурные" },
-              { id: "4", label: "Приключения" },
-              { id: "5", label: "Исторические" },
-              { id: "6", label: "Природные" },
-            ]}
-          />
-        </div>
+            <TopFilterTabs
+              items={[
+                { id: "1", label: "Все туры" },
+                { id: "2", label: "Горные" },
+                { id: "3", label: "Культурные" },
+                { id: "4", label: "Приключения" },
+                { id: "5", label: "Исторические" },
+                { id: "6", label: "Природные" },
+              ]}
+            />
+          </div>
+          <ToursList />
+        </>
       )}
 
       {mainActive === "2" && (
-        <div className="flex flex-col gap-2">
-          <TopFilterTabs
-            items={[
-              { id: "1", label: "Все туры" },
-              { id: "2", label: "Горные" },
-              { id: "3", label: "Культурные" },
-              { id: "4", label: "Приключения" },
-              { id: "5", label: "Исторические" },
-              { id: "6", label: "Природные" },
-            ]}
-          />
-        </div>
+        <>
+          <div className="flex flex-col gap-2">
+            <TopFilterTabs
+              items={[
+                { id: "1", label: "Все туры" },
+                { id: "2", label: "Горные" },
+                { id: "3", label: "Культурные" },
+                { id: "4", label: "Приключения" },
+                { id: "5", label: "Исторические" },
+                { id: "6", label: "Природные" },
+              ]}
+            />
+          </div>
+          <GuidesList />
+        </>
       )}
     </div>
   );
