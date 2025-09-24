@@ -4,7 +4,7 @@ export default function GuidesList() {
   const guides = [
     { id: 1, name: "Ахмад — гид по Душанбе" },
     { id: 2, name: "Зариф — гид по Памиру" },
-    { id: 3, name: "Манижа — культурный гид" },
+    { id: 3, name: "Азиза — культурный гид" },
   ];
 
   return (
