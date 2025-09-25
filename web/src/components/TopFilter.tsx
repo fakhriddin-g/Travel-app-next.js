@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import TopFilterTabs from "./ui/tabs";
+import TopFilterTabs from "./ui/TopFilterTabs";
 import ToursList from "./ToursList";
 import GuidesList from "./GuidesList";
 
@@ -9,7 +9,7 @@ export default function TopFilter() {
   const [mainActive, setMainActive] = useState("1");
 
   return (
-    <div className="container mx-auto flex flex-col gap-5 text-center px-4 md:px-10 xl:px-15 py-4 h-100">
+    <div className="container mx-auto flex flex-col gap-5 text-center px-4 md:px-10 xl:px-15 py-4">
       {/* 1ый фильтр */}
       <div className="flex mx-auto">
         <TopFilterTabs

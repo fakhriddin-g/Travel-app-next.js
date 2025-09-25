@@ -2,7 +2,7 @@ import Navbar from "@/components/Header";
 import Carousel from "@/components/Carousel";
 import "./globals.css";
 import TopFilter from "@/components/TopFilter";
-import FilterTabs from "@/components/ui/tabs";
+import SidebarFilter from "@/components/ToursSidebarFilter";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       </header>
       <main>
         <TopFilter />
+        <SidebarFilter />
       </main>
     </>
   );
