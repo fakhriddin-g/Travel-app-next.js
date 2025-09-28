@@ -4,23 +4,23 @@ import { Badge, Card, CardBody, CardFooter, Image } from "@heroui/react";
 import { mockTours } from "../date/useTours";
 import { Star, MapPin, Calendar, Users } from "lucide-react";
 
-interface TourCardProps {
-  id: string;
-  title: string;
-  description: string;
-  price: number;
-  duration: string;
-  imageUrl: string;
-  rating: number;
-  reviewCount: number;
-  category: string;
-  location: string;
-  maxGroupSize: number;
-  tourType: "local" | "international";
-  onSelect?: (id: string) => void;
-}
+// interface TourCardProps {
+//   id: string;
+//   title: string;
+//   description: string;
+//   price: number;
+//   duration: string;
+//   imageUrl: string;
+//   rating: number;
+//   reviewCount: number;
+//   category: string;
+//   location: string;
+//   maxGroupSize: number;
+//   tourType: "local" | "international";
+//   onSelect?: (id: string) => void;
+// }
 
-export default function TourCard({}: TourCardProps) {
+export default function TourCard() {
   return (
     <div className="gap-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-full">
       {mockTours.map((item, index) => (
@@ -68,12 +68,23 @@ export default function TourCard({}: TourCardProps) {
               </p>
             </div>
             <div className="flex justify-around w-full mb-2">
-              <span className="flex items-center"><MapPin className="mr-1" size={14} />{item.location}</span>
-              <span className="flex items-center"><Calendar className="mr-1" size={14} />{item.duration}</span>
-              <span className="flex items-center"><Users className="mr-1" size={14} />{item.maxGroupSize}</span>
+              <span className="flex items-center">
+                <MapPin className="mr-1" size={14} />
+                {item.location}
+              </span>
+              <span className="flex items-center">
+                <Calendar className="mr-1" size={14} />
+                {item.duration}
+              </span>
+              <span className="flex items-center">
+                <Users className="mr-1" size={14} />
+                {item.maxGroupSize}
+              </span>
             </div>
             <div className="flex justify-around w-full">
-              <span>от <b>${item.price}</b> с человека</span>
+              <span>
+                от <b>${item.price}</b> с человека
+              </span>
               <span>{item.reviewCount} отзывов</span>
             </div>
           </CardFooter>
