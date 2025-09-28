@@ -1,8 +1,9 @@
-import Navbar from "@/components/Header";
-import Carousel from "@/components/Carousel";
+import Navbar from "@/src/components/Header";
+import Carousel from "@/src/components/Carousel";
 import "./globals.css";
-import TopFilter from "@/components/TopFilter";
-import SidebarFilter from "@/components/ToursSidebarFilter";
+import TopFilter from "@/src/components/TopFilter";
+import SidebarFilter from "@/src/components/ToursSidebarFilter";
+import TourCard from "../components/TourCard";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </header>
       <main>
         <TopFilter />
-        <SidebarFilter />
+        {/* <SidebarFilter /> */}
       </main>
     </>
   );

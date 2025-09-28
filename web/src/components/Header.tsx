@@ -1,6 +1,6 @@
 "use client";
 
-import { navItem } from "@/date/constans";
+import { navItem } from "@/src/date/constans";
 import { Heart, ShoppingBag, User, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";

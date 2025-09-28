@@ -5,7 +5,7 @@ import { Filter } from "lucide-react";
 
 export default function SidebarFilter() {
   return (
-    <div className="w-sm mx-4 md:mx-10 xl:mx-15 px-2 py-4 flex flex-col gap-2 border border-gray-200 rounded-2xl">
+    <div className="hidden w-80 mx-4 md:mx-10 xl:mx-15 px-2 py-4 md:flex flex-col gap-2 border border-gray-200 rounded-2xl">
       <h2 className="flex items-center gap-2">
         <Filter size={20} />
         Фильтры поиска
