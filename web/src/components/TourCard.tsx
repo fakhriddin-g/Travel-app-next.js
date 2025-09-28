@@ -60,7 +60,7 @@ export default function TourCard() {
           </CardBody>
           <CardFooter className="text-small text-start flex flex-col justify-between">
             <div className="felx flex-col mb-2">
-              <h3 className="mb-2">{item.title}</h3>
+              <h3 className="mb-2"><b>{item.title}</b></h3>
               <p className="hidden md:flex text-[12px] leading-3">
                 {item.description.length <= 60
                   ? item.description

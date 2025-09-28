@@ -1,7 +1,13 @@
+import GuideCard from "./GuideCard";
+import SidebarFilter from "./ToursSidebarFilter";
+
 const GuidesList = () => {
   return (
-    <div>GuidesList</div>
-  )
-}
+    <div className="flex">
+      <SidebarFilter />
+      <GuideCard />
+    </div>
+  );
+};
 
-export default GuidesList
+export default GuidesList;
