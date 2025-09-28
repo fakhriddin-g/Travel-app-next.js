@@ -61,13 +61,13 @@ export default function TourCard() {
           <CardFooter className="text-small text-start flex flex-col justify-between">
             <div className="felx flex-col mb-2">
               <h3 className="mb-2">{item.title}</h3>
-              <p className="text-[12px] leading-3">
+              <p className="hidden md:flex text-[12px] leading-3">
                 {item.description.length <= 60
                   ? item.description
                   : item.description.slice(0, 60) + "..."}
               </p>
             </div>
-            <div className="flex justify-around w-full mb-2">
+            <div className="hidden md:flex justify-around w-full mb-2">
               <span className="flex items-center">
                 <MapPin className="mr-1" size={14} />
                 {item.location}
