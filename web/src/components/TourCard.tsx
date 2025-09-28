@@ -22,7 +22,7 @@ import { Star, MapPin, Calendar, Users } from "lucide-react";
 
 export default function TourCard() {
   return (
-    <div className="gap-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-full">
+    <div className="gap-2 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 w-full">
       {mockTours.map((item, index) => (
         <Card
           key={index}
@@ -38,6 +38,7 @@ export default function TourCard() {
               shadow="sm"
               src={item.imageUrl}
               width="100%"
+              height="250px"
             />
             <div className="absolute top-3 left-3 flex flex-col gap-2 z-10">
               <Badge
@@ -58,7 +59,7 @@ export default function TourCard() {
               </Badge>
             </div>
           </CardBody>
-          <CardFooter className="text-small text-start flex flex-col justify-between">
+          <CardFooter className="text-small text-start flex flex-col justify-between w-full">
             <div className="felx flex-col mb-2">
               <h3 className="mb-2"><b>{item.title}</b></h3>
               <p className="hidden md:flex text-[12px] leading-3">
@@ -67,7 +68,7 @@ export default function TourCard() {
                   : item.description.slice(0, 60) + "..."}
               </p>
             </div>
-            <div className="hidden md:flex justify-around w-full mb-2">
+            <div className="hidden md:flex justify-between w-full mb-2">
               <span className="flex items-center">
                 <MapPin className="mr-1" size={14} />
                 {item.location}
@@ -81,12 +82,13 @@ export default function TourCard() {
                 {item.maxGroupSize}
               </span>
             </div>
-            <div className="flex justify-around w-full">
+            <div className="flex justify-between w-full">
               <span>
                 от <b>${item.price}</b> с человека
               </span>
               <span>{item.reviewCount} отзывов</span>
             </div>
+            <button className="bg-green-400 w-full py-2 rounded-2xl flex justify-center items-center mt-2 text-white hover:bg-green-500 transition duration-400">В Карзину</button>
           </CardFooter>
         </Card>
       ))}
