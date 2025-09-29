@@ -7,11 +7,11 @@ import { useState } from "react";
 
 const icons = [Heart, ShoppingBag, User];
 
-export default function Navbar() {
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md">
+    <header className="sticky top-0 z-100 bg-white shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-10 xl:px-15 py-4">
         {/* Логотип */}
         <div className="flex items-center gap-2 font-bold">

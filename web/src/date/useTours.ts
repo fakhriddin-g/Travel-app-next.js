@@ -1,5 +1,3 @@
-import TourCard from "../components/TourCard";
-
 interface Tour {
   id: string;
   title: string;
