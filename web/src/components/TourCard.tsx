@@ -61,7 +61,9 @@ export default function TourCard() {
           </CardBody>
           <CardFooter className="text-small text-start flex flex-col justify-between w-full">
             <div className="felx flex-col mb-2">
-              <h3 className="mb-2"><b>{item.title}</b></h3>
+              <h3 className="mb-2">
+                <b>{item.title}</b>
+              </h3>
               <p className="hidden md:flex text-[12px] leading-3">
                 {item.description.length <= 60
                   ? item.description
@@ -88,7 +90,11 @@ export default function TourCard() {
               </span>
               <span>{item.reviewCount} отзывов</span>
             </div>
-            <button className="bg-green-400 w-full py-2 rounded-2xl flex justify-center items-center mt-2 text-white hover:bg-green-500 transition duration-400">В Карзину</button>
+            <div className="w-full">
+              <span className="bg-green-400 w-full py-2 rounded-2xl flex justify-center items-center mt-2 text-white hover:bg-green-500 transition duration-400">
+                В Карзину
+              </span>
+            </div>
           </CardFooter>
         </Card>
       ))}
