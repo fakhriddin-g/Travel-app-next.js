@@ -3,15 +3,15 @@ import AutocompleteUI from "./ui/Autocomplete";
 import PriceRange from "./ui/PriceRange";
 import { Filter } from "lucide-react";
 
-interface SidebarFilterProps {
+interface ToursSidebarFilterProps {
     className?: string;
     isModal?: boolean;
 }
 
-export default function SidebarFilter( {className, isModal}: SidebarFilterProps) {
+export default function ToursSidebarFilter( {className, isModal}: ToursSidebarFilterProps) {
   return (
     <div className={`${
-        isModal ? "block w-[90%]" : "hidden md:flex"
+        isModal ? "block w-[90%]" : "hidden lg:flex"
       } w-100 mx-4 md:mx-10 xl:mx-15 px-2 py-4 flex-col gap-2 border border-gray-200 rounded-2xl ${className}`}>
       <h2 className="flex items-center gap-2">
         <Filter size={20} />

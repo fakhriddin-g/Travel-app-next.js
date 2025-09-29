@@ -1,10 +1,10 @@
 import GuideCard from "./GuideCard";
-import SidebarFilter from "./ToursSidebarFilter";
+import GuideSidebarFilter from "./GuideSidebarFilter";
 
 const GuidesList = () => {
   return (
     <div className="flex">
-      <SidebarFilter />
+      <GuideSidebarFilter />
       <GuideCard />
     </div>
   );

@@ -1,5 +1,5 @@
 import TourCard from "./TourCard";
-import SidebarFilter from "./ToursSidebarFilter";
+import ToursSidebarFilter from "./ToursSidebarFilter";
 import {
   Modal,
   ModalContent,
@@ -15,11 +15,11 @@ const ToursList = () => {
 
   return (
     <div className="w-full">
-      <button onClick={onOpen} className="md:hidden text-center py-2 mb-4 w-full bg-gray-200 rounded-lg border-gray-300">
+      <button onClick={onOpen} className="lg:hidden text-center py-2 mb-4 w-full bg-gray-200 rounded-lg border-gray-300">
         Все фильтры
       </button>
       <div className="flex">
-        <SidebarFilter />
+        <ToursSidebarFilter />
         <TourCard />
       </div>
 
@@ -32,7 +32,7 @@ const ToursList = () => {
                 Modal Title
               </ModalHeader>
               <ModalBody>
-                <SidebarFilter isModal/>
+                <ToursSidebarFilter isModal />
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>
