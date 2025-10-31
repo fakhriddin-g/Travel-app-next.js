@@ -1,4 +1,3 @@
-import Carousel from "@/src/components/Carousel";
 import "./globals.css";
 import TopFilter from "@/src/components/TopFilter";
 import Footer from "@/src/components/Footer";

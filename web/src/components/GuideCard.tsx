@@ -32,7 +32,7 @@ export default function GuideCard() {
               height="200px"
             />
           </CardBody>
-          <CardFooter className="text-small flex flex-col gap-2 justify-between">
+          <CardFooter className="text-small flex flex-col gap-2 justify-between text-dark_text">
             <b>{item.name}</b>
             <div className="flex justify-between items-center w-full">
               <span className="flex items-center gap-2">
@@ -68,14 +68,6 @@ export default function GuideCard() {
                   </p>
                 </>
               )}
-              {/* {item.languages.map((language) => (
-                <span
-                  key={language}
-                  className="border-1 border-gray-200 px-2 py-1 rounded-lg text-[11px]"
-                >
-                  <b>{language}</b>
-                </span>
-              ))} */}
             </div>
             <div className="flex items-center gap-2">
               <Award className="hidden md:flex" size={16} />
@@ -94,11 +86,11 @@ export default function GuideCard() {
                   : item.description.slice(0, 75) + "..."}
               </p>
             </div>
-            <div className="flex justify-between items-center w-full">
+            <div className="flex justify-between items-center w-full text-accent">
               <span>
                 <b>${item.pricePerDay}</b>/день
               </span>
-              <span className="bg-black text-white px-4 py-1 transition duration-300 rounded-2xl">
+              <span className="bg-primary text-light_text hover:bg-secondary hover:text-dark_text px-4 py-1 transition duration-300 rounded-2xl uppercase text-sm">
                 Выбрать гида
               </span>
             </div>

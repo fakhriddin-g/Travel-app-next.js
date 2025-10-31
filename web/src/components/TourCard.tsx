@@ -68,7 +68,7 @@ export default function TourCard() {
             </div>
           </CardBody>
           <CardBody
-            className="text-small text-start flex flex-col justify-between w-full"
+            className="text-small text-start flex flex-col justify-between w-full text-dark_text"
             onClick={() => router.push(`/tours/${item.id}`)}
           >
             <div className="felx flex-col mb-2">
@@ -96,7 +96,7 @@ export default function TourCard() {
               </span>
             </div>
             <div className="flex justify-between w-full">
-              <span>
+              <span className="text-accent">
                 от <b>${item.price}</b> с человека
               </span>
               <span>{item.reviewCount} отзывов</span>
@@ -104,7 +104,7 @@ export default function TourCard() {
           </CardBody>
           <CardFooter className="flex items-center">
             <div className="flex items-center gap-2 w-full">
-              <span className="bg-primary w-full py-2 rounded-2xl flex justify-center items-center text-light_text hover:text-dark_text hover:bg-secondary transition duration-400">
+              <span className="bg-primary w-full py-2 rounded-2xl flex justify-center items-center text-light_text hover:text-dark_text hover:bg-secondary transition duration-400 uppercase">
                 В Карзину
               </span>
               <Heart className="text-primary hover:text-red-500 hover:fill-red-500" />
