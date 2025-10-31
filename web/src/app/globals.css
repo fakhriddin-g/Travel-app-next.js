@@ -5,8 +5,8 @@
 @config "../../tailwind.config.js";
 
 :root {
-    --dark_text: #ffffff;
-    --light_text: #171717;
+    --dark_text: #2D3748;
+    --light_text: #F9FAFB;
 }
 
 /* 

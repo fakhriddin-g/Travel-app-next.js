@@ -28,7 +28,8 @@ export const plugins = [
         secondary: "#68D391", //навигации, при навидание на иконки, ссылки, подробнее
         background: "#F9FAFB", //карта туров, гидов
         accent: "#F39016", //скидки, объявлении
-        primary_text: "#2D3748", //основной текст
+        dark_text: "#2D3748", //dark_text
+        light_text: "#F9FAFB", //light_text
         success: "#38A169", //успешно
         error: "#E53E3E", //ощибка
       },

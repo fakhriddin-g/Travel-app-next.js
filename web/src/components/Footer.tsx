@@ -53,13 +53,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-100 border-t border-gray-400">
+    <footer className="bg-background border-t border-primary">
       <div className="container mx-auto px-4 md:px-10 xl:px-15 py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Компания и логотип */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Mountain className="w-8 h-8 text-primary" />
+            <div className="flex items-center gap-2 text-primary">
+              <Mountain className="w-8 h-8" />
               <div>
                 <h3 className="font-bold text-lg">Таджик Туры</h3>
                 <p className="text-sm text-muted-foreground">Discover Tajikistan</p>
@@ -70,16 +70,16 @@ export default function Footer() {
               Мы создаем незабываемые путешествия по самым красивым местам Центральной Азии.
             </p>
             <div className="flex gap-3">
-              <Button size="sm" className="w-10 h-10">
+              <Button size="sm" className="w-10 h-10 text-primary hover:text-secondary">
                 <Facebook className="w-4 h-4" />
               </Button>
-              <Button size="sm" className="w-10 h-10">
+              <Button size="sm" className="w-10 h-10 text-primary hover:text-secondary">
                 <Instagram className="w-4 h-4" />
               </Button>
-              <Button size="sm" className="w-10 h-10">
+              <Button size="sm" className="w-10 h-10 text-primary hover:text-secondary">
                 <Twitter className="w-4 h-4" />
               </Button>
-              <Button size="sm" className="w-10 h-10">
+              <Button size="sm" className="w-10 h-10 text-primary hover:text-secondary">
                 <Youtube className="w-4 h-4" />
               </Button>
             </div>
@@ -126,7 +126,7 @@ export default function Footer() {
               Получайте новости о специальных предложениях и новых турах
             </p>
             <form onSubmit={handleSubscribe} className="space-y-3">
-              <div className="flex gap-2">
+              <div className="flex items-center gap-2">
                 <Input
                   type="email"
                   name="email"
@@ -135,7 +135,7 @@ export default function Footer() {
                   required
                 />
                 <Button type="submit" size="sm">
-                  <Send className="w-4 h-4" />
+                  <Send className="w-4 h-4 text-primary hover:text-secondary" />
                 </Button>
               </div>
             </form>
@@ -160,7 +160,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <span className="flex w-full h-0.5 bg-gray-400 my-8" />
+        <span className="flex w-full h-0.5 bg-primary my-8" />
 
         {/* Быстрые ссылки */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
@@ -177,10 +177,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <span className="flex w-full h-0.5 bg-gray-400 my-8" />
+        <span className="flex w-full h-0.5 bg-primary my-8" />
 
         {/* Копирайт */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground text-primary">
           <p>&copy; 2025 Таджик Туры. Все права защищены.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-foreground transition-colors">
