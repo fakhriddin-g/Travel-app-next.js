@@ -4,6 +4,17 @@ import PriceRange from "./ui/PriceRange";
 import { Filter } from "lucide-react";
 import { mockTours } from "../date/useTours";
 
+// const arr = [...new Set(mockTours.map((tour) => tour.category))]
+// console.log(arr);
+// mockTours.map((tour) => console.log(tour.category))
+
+// const uniqueTours = mockTours.filter(
+//   (tour, index, self) =>
+//     index === self.findIndex((t) => t.category === tour.category)
+// );
+
+
+
 interface ToursSidebarFilterProps {
   isModal?: boolean;
 }
@@ -29,8 +40,8 @@ export default function ToursSidebarFilter({
       />
       <AutocompleteUI
         items={mockTours.map((tour) => ({
-          category: tour.category,
           key: tour.id?.toString() ?? "",
+          category: tour.category,
           location: tour.location,
           tourType: tour.tourType,
         }))}

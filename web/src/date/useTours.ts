@@ -69,7 +69,7 @@ export const mockTours: Tour[] = [
     category: "historical",
     location: "Худжанд",
     maxGroupSize: 12,
-    tourType: "international"
+    tourType: "local"
   },
   {
     id: "5",

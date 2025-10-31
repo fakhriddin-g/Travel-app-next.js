@@ -11,11 +11,14 @@ import {
 } from "@heroui/react";
 
 const ToursList = () => {
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
     <div className="w-full">
-      <button onClick={onOpen} className="lg:hidden text-center py-2 mb-4 w-full bg-gray-200 rounded-lg border-gray-300">
+      <button
+        onClick={onOpen}
+        className="lg:hidden text-center py-2 mb-4 w-full bg-gray-200 rounded-lg border-gray-300"
+      >
         Все фильтры
       </button>
       <div className="flex">

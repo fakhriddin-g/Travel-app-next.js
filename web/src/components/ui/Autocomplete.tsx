@@ -91,7 +91,9 @@ export default function AutocompleteUI({ items }: AutocompleteUIProps) {
             placeholder="Все регионы"
           >
             {(item) => (
-              <AutocompleteItem key={item.key}>{item.location}</AutocompleteItem>
+              <AutocompleteItem key={item.key}>
+                {item.location}
+              </AutocompleteItem>
             )}
           </Autocomplete>
         </div>
@@ -106,7 +108,9 @@ export default function AutocompleteUI({ items }: AutocompleteUIProps) {
             placeholder="Все типы"
           >
             {(item) => (
-              <AutocompleteItem key={item.key}>{item.tourType}</AutocompleteItem>
+              <AutocompleteItem key={item.key}>
+                {item.tourType}
+              </AutocompleteItem>
             )}
           </Autocomplete>
         </div>
