@@ -2,6 +2,7 @@
 
 import { Tabs, Tab } from "@heroui/react";
 import { useState } from "react";
+import AnimatedWords from "../AnimatedWords";
 
 interface TabItem {
   id: string;
@@ -40,10 +41,13 @@ export default function TopFilterTabs({
       {/* Заголовок и описание */}
       {selectedItem.title && showHeader && selectedItem && (
         <div className="flex flex-col gap-4 mb-6">
-          <h1 className="font-bold text-2xl md:text-5xl">
+          <h1 className="font-bold text-2xl md:text-5xl text-primary">
             {selectedItem.title}
           </h1>
-          <p className="text-sm md:text-lg">{selectedItem.content}</p>
+          <div className="flex flex-col gap-2">
+            <p className="text-sm md:text-lg text-center">{selectedItem.content} </p>
+            <p><AnimatedWords /></p>
+          </div>
         </div>
       )}
 

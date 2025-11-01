@@ -17,6 +17,15 @@ export const theme = {
       success: "#38A169", //успешно
       error: "#E53E3E", //ощибка
     },
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: 0, transform: "translateY(10px)" },
+        "100%": { opacity: 0, transform: "translateY(0)" },
+      },
+    },
+    animation: {
+      fadeIn: "fadeIn 1s ease-in-out",
+    },
   },
 };
 export const darkMode = "class";

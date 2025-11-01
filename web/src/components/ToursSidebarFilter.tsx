@@ -4,16 +4,6 @@ import PriceRange from "./ui/PriceRange";
 import { Filter } from "lucide-react";
 import { mockTours } from "../date/useTours";
 
-// const arr = [...new Set(mockTours.map((tour) => tour.category))]
-// console.log(arr);
-// mockTours.map((tour) => console.log(tour.category))
-
-// const uniqueTours = mockTours.filter(
-//   (tour, index, self) =>
-//     index === self.findIndex((t) => t.category === tour.category)
-// );
-
-
 
 interface ToursSidebarFilterProps {
   isModal?: boolean;
@@ -26,10 +16,10 @@ export default function ToursSidebarFilter({
     <div
       className={`${
         isModal ? "block w-[90%]" : "hidden lg:flex"
-      } w-100 mx-4 md:mx-10 xl:mx-15 px-2 py-4 flex-col gap-2 border border-gray-200 rounded-2xl`}
+      } w-100 mx-4 md:mx-10 xl:mx-15 px-2 py-4 flex-col gap-2 border border-primary rounded-2xl`}
     >
       <h2 className="flex items-center gap-2">
-        <Filter size={20} />
+        <Filter size={20} className="text-primary" />
         Фильтры поиска
       </h2>
       <Search
@@ -47,7 +37,7 @@ export default function ToursSidebarFilter({
         }))}
       />
       <PriceRange />
-      <button className="w-full bg-gray-100 py-2 rounded-2xl cursor-pointer hover:bg-gray-200 transition duration-300">
+      <button className="w-full bg-primary text-light_text py-2 rounded-2xl cursor-pointer hover:bg-accent transition duration-300">
         Очистить фильтры
       </button>
     </div>

@@ -93,7 +93,7 @@ export default function Footer() {
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-sm hover:text-primary transition-colors"
                   >
                     {service}
                   </a>
@@ -110,7 +110,7 @@ export default function Footer() {
                 <li key={index}>
                   <a 
                     href="#" 
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-sm hover:text-primary transition-colors"
                   >
                     {destination}
                   </a>
@@ -169,7 +169,7 @@ export default function Footer() {
               <a
                 key={index}
                 href="#"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-primary "
               >
                 {link}
               </a>
